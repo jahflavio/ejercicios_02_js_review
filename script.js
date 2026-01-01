@@ -222,7 +222,9 @@ count;
  */
 function getTotalReviewCount(book) {
   const goodreads = book.reviews.goodreads.reviewsCount;
-  const librarything = book.reviews.librarything?.reviewsCount;
+  const librarything = book.reviews.librarything?.reviewsCount ?? 0;
+  librarything;
+  goodreads;
   return goodreads + librarything;
 }
 
