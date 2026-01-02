@@ -284,6 +284,6 @@ const sorted = arr.slice().sort((a, b) => a - b);
 arr;
 sorted;
 
-const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
+const sortedByPages = books.slice().sort((a, b) => a.pages - b.pages);
 sortedByPages;
 
