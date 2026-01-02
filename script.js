@@ -273,3 +273,17 @@ const adventureBooks = books.filter((books) =>
   books.genres.includes('adventure')
 ).map((book) => book.title);
 adventureBooks;
+
+//ARRAY REDUCE METHOD
+const pagesAllBooks = books.reduce((sum, book) => sum + book.pages, 0)
+pagesAllBooks;
+
+//ARRAY SORT
+const arr = [3, 7, 1, 9, 6];
+const sorted = arr.slice().sort((a, b) => a - b);
+arr;
+sorted;
+
+const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
+sortedByPages;
+
